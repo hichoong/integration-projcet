@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Redis List Page</title>
+</head>
+<body>
+    <h1>Redis List</h1>
+    <tr th:each="key : ${keyList}">
+        key : <td th:text="${key.key}">key</td>
+        value : <td th:text="${key.value}">key</td>
+        <br>
+    </tr>
+    <a th:href="@{/redis}">돌아가기</a>
+</body>
+</html>

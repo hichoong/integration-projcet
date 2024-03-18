@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Redis Add Page</title>
+</head>
+<body>
+        <form th:action="@{/redis/add}" th:object="${stringForm}" method="POST" >
+            <td>key</td>
+            <input type="text" th:field="*{key}"/>
+            <td>value</td>
+            <input type="text" th:field="*{value}"/>
+            <input type="submit" value="추가" />
+        </form>
+        <br>
+        <a th:href="@{/redis}">돌아가기</a>
+</body>
+</html>
