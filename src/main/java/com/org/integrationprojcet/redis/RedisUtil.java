@@ -1,16 +1,15 @@
-package com.org.integrationprojcet.controller.redis;
+package com.org.integrationprojcet.redis;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
-public class RedisService {
+public class RedisUtil {
     private final RedisTemplate<String, String> stringRedisTemplate;
 
     public void addString(String key, String value) {
