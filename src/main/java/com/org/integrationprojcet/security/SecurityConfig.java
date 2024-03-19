@@ -19,10 +19,11 @@ public class SecurityConfig {
                 .formLogin(Customizer.withDefaults())
                 .authorizeHttpRequests(authorizationManagerRequest ->
                         authorizationManagerRequest
-                            .requestMatchers(AntPathRequestMatcher.antMatcher("/auth/**")
-                                                ).authenticated()
                             .requestMatchers(
-                                    AntPathRequestMatcher.antMatcher("/redis/**" )
+                                    AntPathRequestMatcher.antMatcher("/login-form")
+                            ).permitAll()
+                            .requestMatchers(
+                                    AntPathRequestMatcher.antMatcher("/sign-form")
                             ).permitAll()
                 )
                 .headers(

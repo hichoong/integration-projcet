@@ -1,17 +1,19 @@
 package com.org.integrationprojcet.domain.member.dto;
 
 import com.org.integrationprojcet.domain.member.enums.Gender;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class SignForm {
+public class LoginMember {
+
+    private Long id;
     private String name;
-    private String password;
-    private String password2;
     private String nickname;
     private Gender gender;
 }
