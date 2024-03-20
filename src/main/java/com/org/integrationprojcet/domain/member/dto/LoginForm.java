@@ -8,6 +8,6 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 public class LoginForm {
-    private String nickname;
+    private String username;
     private String password;
 }

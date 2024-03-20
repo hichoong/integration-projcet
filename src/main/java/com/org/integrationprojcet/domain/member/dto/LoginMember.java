@@ -14,6 +14,6 @@ public class LoginMember {
 
     private Long id;
     private String name;
-    private String nickname;
+    private String username;
     private Gender gender;
 }

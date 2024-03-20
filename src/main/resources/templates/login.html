@@ -6,7 +6,15 @@
 </head>
 <body>
     <h2>로그인 페이지</h2>
-    <tr>ID</tr>
-    <input th:text="">
+
+    <form  th:action="@{/login}" method="POST">
+        <tr>ID</tr>
+        <input type="text" id="username"/>
+        <tr>Password</tr>
+        <input type="password" id="password" />
+        <input type="submit" value="Login"/>
+    </form>
+
+    <a th:href="@{/sign}">회원가입</a>
 </body>
 </html>

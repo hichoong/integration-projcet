@@ -12,6 +12,6 @@ public class SignForm {
     private String name;
     private String password;
     private String password2;
-    private String nickname;
+    private String username;
     private Gender gender;
 }
