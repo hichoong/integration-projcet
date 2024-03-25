@@ -26,8 +26,6 @@ public class SecurityConfig {
                     headersConfigurer
                             .frameOptions(HeadersConfigurer.FrameOptionsConfig::sameOrigin)
                 );
-
-
         return http.build();
     }
 }
