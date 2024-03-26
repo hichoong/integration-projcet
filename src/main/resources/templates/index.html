@@ -5,7 +5,7 @@
     <title>웰컴페이지</title>
 </head>
 <body>
-    <img  style="cursor:pointer;" th:src="@{images/kakao_login_large_narrow.png}" th:onclick="|location.href='@{/kakao/oauth/login} '|" />
+    <img  style="cursor:pointer;" th:src="@{images/kakao_login_large_narrow.png}" th:onclick="|location.href='@{https://kauth.kakao.com/oauth/authorize(client_id=${kakaoApiKey}, redirect_uri=${redirectUrl}, response_type='code')} '|" />
     <h1>안녕하세요~</h1>
     <a th:href="@{/redis}">Redis</a>
     <br>

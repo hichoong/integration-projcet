@@ -25,7 +25,7 @@ spring:
         format_sql: true
     hibernate:
       ddl-auto: update
-  #kafka
+  ##kafka
   kafka:
     consumer:
       auto-offset-reset: earliest
@@ -47,3 +47,6 @@ logging:
       apache:
         coyote:
           http11: debug
+kakao:
+  api_key: b0285673c7d3c001bf47be9408184ea8
+  redirect_url: http://localhost:8080/kakao/oauth/login
